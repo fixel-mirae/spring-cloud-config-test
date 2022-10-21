@@ -69,7 +69,7 @@ spring:
           predicates:
             - Path=/vse_app/**
           filters:
-            - CustomNewAuthFilter #Todo: 수정함
+            - TestFilter #Todo: 수정함
             - name: RequestSize
               args:
                 maxSize: 7000000
