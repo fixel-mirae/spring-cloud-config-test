@@ -93,7 +93,7 @@ spring:
                 fallbackuri: forward:/vcApiFallBack
         
         - id: vse_app_dev
-          uri: http://localhost:8712/
+          uri: http://3.36.143.201:8712/
           predicates:
             - Path=/vse_app_dev/**
           filters:
