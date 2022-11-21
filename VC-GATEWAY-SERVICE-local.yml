@@ -81,7 +81,7 @@ spring:
         - id: vse_app_test
           uri: http://localhost:8711/
           predicates:
-            - Path=/vse_app/**
+            - Path=/vse_app_test/**
           filters:
             - CustomAuthFilter
             - name: RequestSize
