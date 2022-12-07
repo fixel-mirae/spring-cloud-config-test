@@ -77,34 +77,7 @@ spring:
               args:
                 name: vc-api-fallback
                 fallbackuri: forward:/vcApiFallBack
-        
-        - id: vse_app_test
-          uri: http://localhost:8711/
-          predicates:
-            - Path=/vse_app_test/**
-          filters:
-            - CustomAuthFilter
-            - name: RequestSize
-              args: 
-                maxSize : 10000000
-            - name: Hystrix
-              args:
-                name: vc-api-fallback
-                fallbackuri: forward:/vcApiFallBack
-        
-        - id: vse_app_dev
-          uri: http://3.36.143.201:8712/
-          predicates:
-            - Path=/vse_app_dev/**
-          filters:
-            - CustomAuthFilter
-            - name: RequestSize
-              args: 
-                maxSize : 10000000
-            - name: Hystrix
-              args:
-                name: vc-api-fallback
-                fallbackuri: forward:/vcApiFallBack
+
 
 eureka:
   client:
